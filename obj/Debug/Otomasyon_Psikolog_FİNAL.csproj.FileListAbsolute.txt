@@ -15,3 +15,22 @@ C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_
 C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.pdb
 C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.Form_Appointment.resources
 C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.Form_Login.resources
+C:\Users\enes-\OneDrive\Masaüstü\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.exe
+C:\Users\enes-\OneDrive\Masaüstü\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.pdb
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\bin\Debug\Otomasyon_Psikolog_FİNAL.exe.config
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\bin\Debug\Otomasyon_Psikolog_FİNAL.exe
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\bin\Debug\Otomasyon_Psikolog_FİNAL.pdb
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\bin\Debug\EntityFramework.dll
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\bin\Debug\EntityFramework.xml
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.csproj.AssemblyReference.cache
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.Form1.resources
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.Form_Appointment.resources
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.Form_Login.resources
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.Properties.Resources.resources
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.csproj.GenerateResource.cache
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.csproj.CoreCompileInputs.cache
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyo.0052CF16.Up2Date
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.exe
+C:\Users\enes-\OneDrive\Masaüstü\MERYEM OKUL\2. SINIF DERS NOTLARIM\Otomasyon_Psikolog_FİNAL\obj\Debug\Otomasyon_Psikolog_FİNAL.pdb

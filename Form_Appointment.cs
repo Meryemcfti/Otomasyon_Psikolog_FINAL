@@ -118,9 +118,7 @@ namespace Otomasyon_Psikolog_FİNAL
                 cmbSaat.SelectedIndex = 0;
 
 
-                // 3. LİSTEYİ OTOMATİK YENİLEME
-                // Form açıldığında randevular DataGridView'e direkt gelsin diye Listeleme metodunu çağırıyoruz.
-                // btn_list_Click(sender, e); 
+            
             }
             catch (Exception ex)
             {
@@ -132,29 +130,28 @@ namespace Otomasyon_Psikolog_FİNAL
         {
             try
             {
-                // ComboBox'lardan seçilen ID'lerini alıyoruz (Senin formundaki isimlerine göre: cmb_customer, cmb_session)
+              
                 int selectedCustomerId = (int)cmb_customer.SelectedValue;
                 int selectedSessionId = (int)cmb_sessionType.SelectedValue;
 
-                // Yeni CustomerProduct yerine senin projenin karşılığı olan Appointment (Randevu) nesnesi oluşturuyoruz
+                
                 var newRecord = new Appointment
                 {
                     Customer_Id = selectedCustomerId,
                     SessionType_Id = selectedSessionId,
 
-                    // Not: Senin Randevu tablonda Tarih ve Durum sütunları da olduğu için onları da buraya ekledim.
+
                     Appointment_Date = dateTimePicker1.Value.Date + TimeSpan.Parse(cmbSaat.Text),
                    
                     Appointment_Status = "AKTİF"
                 };
 
-                // CustomerProducts tablosu yerine senin db.Appointments tablosuna yeni kaydımızı ekliyoruz
+              
                 db.Appointments.Add(newRecord);
                 db.SaveChanges();
 
                 MessageBox.Show("Kayıt başarıyla eklendi.");
 
-                // Listeleme işleminin tanımlı olduğu metodu çalıştırıyoruz (Senin listeleme metodunun adına göre güncellendi)
                 btn_list_Click(sender, e);
             }
             catch (Exception ex)
@@ -179,14 +176,14 @@ namespace Otomasyon_Psikolog_FİNAL
                     if (dataGridView1.CurrentRow != null)
                     {
                         int selectedId = Convert.ToInt32(dataGridView1.CurrentRow.Cells["Randevu_No"].Value);
-                        //seçilen id'ye sahip randevuyu veritabanından bul. bu kısım özellikle silme noktasında bütün satırların değil yalnızca seçilen satırın silinmesi için önemli.
-                        Appointment appointmentToDelete = db.Appointments.Find(selectedId); //find metodu ile seçilen id'ye sahip randevuyu bulduk ve appointmentToDelete değişkenine atadık. bu değişken üzerinden silme işlemi yapacağız.
+                    
+                        Appointment appointmentToDelete = db.Appointments.Find(selectedId); 
                         if (appointmentToDelete != null)
                         {
                             db.Appointments.Remove(appointmentToDelete);
                             db.SaveChanges();
                             MessageBox.Show("Randevu silindi!");
-                            btn_list_Click(sender, e); // Listeleme metodunu çağırarak DataGridView'i güncelliyoruz.
+                            btn_list_Click(sender, e); 
                         }
                         else
                         {
@@ -222,7 +219,7 @@ namespace Otomasyon_Psikolog_FİNAL
                             Toplam_Randevu = g.Count()
                         })
 
-                        .OrderByDescending(x => x.Toplam_Randevu) // Toplam randevu sayısına göre azalan şekilde sıralama yapıyoruz. En çok randevuya sahip müşteriyi alıyoruz
+                        .OrderByDescending(x => x.Toplam_Randevu) 
                         .FirstOrDefault();
 
                     if(result != null)
@@ -260,7 +257,7 @@ namespace Otomasyon_Psikolog_FİNAL
                             Seans_Adi = g.Key.SessionType_Name,
                             Toplam_Satis = g.Count()
                         })
-                        .OrderByDescending(x => x.Toplam_Satis) // Toplam satış sayısına göre azalan şekilde sıralama yapıyoruz. En çok satılan seans türünü alıyoruz
+                        .OrderByDescending(x => x.Toplam_Satis) 
                         .FirstOrDefault(); 
                     if (result != null)
                     {

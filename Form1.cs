@@ -25,8 +25,16 @@ namespace Otomasyon_Psikolog_FİNAL
         {
             try
             {
-                var customers = db.Customers.ToList();
-                dataGridView1.DataSource = db.Customers.ToList();
+                dataGridView1.DataSource = db.Customers
+                    .Select(c => new
+                    {
+                        c.Customer_Id,
+                        c.Customer_Name,
+                        c.Customer_Surname,
+                        c.Customer_Email,
+                        c.Customer_Telephone
+                    })
+                    .ToList();
 
                 dataGridView1.Columns["Customer_Id"].HeaderText = "Danışan ID";
                 dataGridView1.Columns["Customer_Name"].HeaderText = "Danışan Adı";
@@ -34,18 +42,11 @@ namespace Otomasyon_Psikolog_FİNAL
                 dataGridView1.Columns["Customer_Email"].HeaderText = "E-Posta";
                 dataGridView1.Columns["Customer_Telephone"].HeaderText = "Telefon";
 
-                //danışan Id kısmını gizlemek için bu kod satırını yazdık 
                 dataGridView1.Columns["Customer_Id"].Visible = false;
-                dataGridView1.Columns["Appointments"].Visible = false;
 
-                //sütun genişliğini sağladık
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-
                 dataGridView1.EnableHeadersVisualStyles = false;
-
-
-                // ===== GÖRSEL TASARIM =====
                 dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Teal;
                 dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
                 dataGridView1.ColumnHeadersDefaultCellStyle.Font =
@@ -55,26 +56,20 @@ namespace Otomasyon_Psikolog_FİNAL
                     new Font("Segoe UI", 10, FontStyle.Regular);
 
                 dataGridView1.DefaultCellStyle.ForeColor = Color.Teal;
-
                 dataGridView1.DefaultCellStyle.SelectionBackColor = Color.LightSeaGreen;
                 dataGridView1.DefaultCellStyle.SelectionForeColor = Color.White;
 
                 dataGridView1.BackgroundColor = Color.White;
                 dataGridView1.BorderStyle = BorderStyle.None;
-
                 dataGridView1.RowHeadersVisible = false;
-
-                dataGridView1.SelectionMode =
-                    DataGridViewSelectionMode.FullRowSelect;
-
+                dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 dataGridView1.MultiSelect = false;
                 dataGridView1.ReadOnly = true;
             }
             catch (Exception ex)
-            { 
-                MessageBox.Show($"Hata = {ex.Message}");
+            {
+                MessageBox.Show("Hata = " + ex.Message + "\n\nDetay = " + ex.InnerException?.Message);
             }
-            
         }
 
         private void btn_ekle_Click(object sender, EventArgs e)
@@ -113,15 +108,15 @@ namespace Otomasyon_Psikolog_FİNAL
             }
         }
 
-        private void btn_guncelle_Click(object sender, EventArgs e)// burada özellikle if kullanmamızın sebebi güncelleme butonunun mantığında öncelikle bir hücre seçilmesi gerektiğinden dolayıdır. eğer hücre seçilmezse güncelleme işlemi yapılamaz ve hata verir. bu yüzden if kullanarak hücre seçilmediği durumlarda kullanıcıya bilgi vermek istedik.
+        private void btn_guncelle_Click(object sender, EventArgs e)
         {
             try
             {
                 if (dataGridView1.CurrentRow != null)
                 {
                     int selectedId = Convert.ToInt32(dataGridView1.CurrentRow.Cells["Customer_Id"].Value);
-                    //seçilen id'ye sahip müşteriyi veritabanından bul. bu kısım özellikle güncelleme noktasında bütün satırların değil yalnızca seçilen satırın güncellenmesi için önemli.
-                    Customer customer = db.Customers.Find(selectedId); //find metodu ile seçilen id'ye sahip müşteriyi bulduk ve customerToUpdate değişkenine atadık. bu değişken üzerinden güncelleme işlemi yapacağız.
+                    
+                    Customer customer = db.Customers.Find(selectedId); 
                     if (customer != null)
                     {
                         customer.Customer_Name = txt_isim.Text;
@@ -200,7 +195,7 @@ namespace Otomasyon_Psikolog_FİNAL
             this.Show();
         }
 
-        
+       
     }
     
 }

@@ -6,19 +6,13 @@
       <HashCode>AAgAAAAAAAAAABAAAACAAQAAQAAAAIAAAAAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Appointment" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="Otomasyon_Psikolog_FİNAL.SessionType">
     <Position X="2.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAQgAAAAAAAAAACAAAAAUAgAAAAAAAAIAAAAAAA=</HashCode>
+      <HashCode>AAAAAAQgAAAAAAAAAAAAAAAAUAgAAAAAAAAIAAAAAAA=</HashCode>
       <FileName>SessionType.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Department1" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="Otomasyon_Psikolog_FİNAL.Department">
     <Position X="6" Y="3.5" Width="1.5" />
@@ -33,9 +27,6 @@
       <HashCode>AAkAAAQgAAAABAAAEAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
       <FileName>Appointment.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="SessionType1" />
-    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

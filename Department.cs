@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Otomasyon_Psikolog_FİNAL
 {
-    [Table("Table_Department_K")] //sqldeki tablo adını buraya bağladık
+    [Table("Table_Department_K")] 
     public class Department
     {
         [Key]
@@ -18,8 +18,6 @@ namespace Otomasyon_Psikolog_FİNAL
         public string Department_Name { get; set; }
 
         public virtual ICollection <SessionType> SessionTypes { get; set;}
-        //köprü görevi, Nasıl ki SQL 
-        //tarafında Diagramlar ile foreign key primary key ilişkisini kuruyosak, EntityFramework konseptinde de
-        //birbiriyle ilişkili sütunları Navigation Property olarak adlandırılan bu özellikler üzerinden kurarız.
+        
         }
 }

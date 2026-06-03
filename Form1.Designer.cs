@@ -388,6 +388,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Psikolog Danışan Yönetim Sistemi";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+          
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

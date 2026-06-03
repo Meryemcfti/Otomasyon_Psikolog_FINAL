@@ -32,7 +32,9 @@ namespace Otomasyon_Psikolog_FİNAL
         public string Customer_Telephone { get; set; }
 
         public virtual ICollection<Appointment> Appointments { get; set; }
-        //Customer sınıfının birden fazla Appointment ile işi olabileceği için Icollection olarak ekledik.
+
+        
+        
 
 
 

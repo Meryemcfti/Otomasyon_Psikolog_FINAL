@@ -25,17 +25,9 @@ namespace Otomasyon_Psikolog_FİNAL
         public int Department_Id { get; set; }
 
         public virtual Department Department { get; set; }
-        // Her seans türünün bağlı olduğu tek bir Departman nesnesi vardır
-
-        // Bir seans türü birden fazla Randevuda satılmış olabilir ilişkisi
+        
         public virtual ICollection<Appointment> Appointments { get; set; }
 
-        public Department Department1
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        
     }
 }
