@@ -1,38 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Otomasyon_Psikolog_FİNAL.Appointment">
-    <Position X="0.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAkAAAQgAAAABAAAEAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
-      <FileName>Appointment.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Customer" />
-      <Property Name="SessionType" />
-    </ShowAsAssociation>
-  </Class>
   <Class Name="Otomasyon_Psikolog_FİNAL.Customer">
-    <Position X="2.5" Y="3.25" Width="1.5" />
+    <Position X="0.5" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAABAAAACAAQAAQAAAAIAAAAAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Appointment" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Otomasyon_Psikolog_FİNAL.SessionType">
+    <Position X="2.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQgAAAAAAAAAACAAAAAUAgAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>SessionType.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Department1" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Otomasyon_Psikolog_FİNAL.Department">
-    <Position X="6.75" Y="3.25" Width="1.5" />
+    <Position X="6" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAgAAAAAAAACAAAAAAA=</HashCode>
       <FileName>Department.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Otomasyon_Psikolog_FİNAL.SessionType">
-    <Position X="4.75" Y="0.5" Width="2" />
+  <Class Name="Otomasyon_Psikolog_FİNAL.Appointment">
+    <Position X="3.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAQgAAAAAAAAAAAAAAAAUAgAAAAAAAAIAAAAAAA=</HashCode>
-      <FileName>SessionType.cs</FileName>
+      <HashCode>AAkAAAQgAAAABAAAEAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Appointment.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Department" />
+      <Property Name="SessionType1" />
     </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />

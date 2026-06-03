@@ -28,5 +28,13 @@ namespace Otomasyon_Psikolog_FİNAL
 
         [ForeignKey("SessionType_Id")]
         public virtual SessionType SessionType { get; set; }
+
+        public SessionType SessionType1
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

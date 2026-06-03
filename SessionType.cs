@@ -29,5 +29,13 @@ namespace Otomasyon_Psikolog_FİNAL
 
         // Bir seans türü birden fazla Randevuda satılmış olabilir ilişkisi
         public virtual ICollection<Appointment> Appointments { get; set; }
+
+        public Department Department1
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

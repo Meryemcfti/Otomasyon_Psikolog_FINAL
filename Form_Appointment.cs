@@ -222,8 +222,8 @@ namespace Otomasyon_Psikolog_FİNAL
                             Toplam_Randevu = g.Count()
                         })
 
-                        .OrderByDescending(x => x.Toplam_Randevu) // Toplam randevu sayısına göre azalan şekilde sıralama yapıyoruz
-                        .FirstOrDefault(); // En çok randevuya sahip müşteriyi alıyoruz
+                        .OrderByDescending(x => x.Toplam_Randevu) // Toplam randevu sayısına göre azalan şekilde sıralama yapıyoruz. En çok randevuya sahip müşteriyi alıyoruz
+                        .FirstOrDefault();
 
                     if(result != null)
                     {
@@ -260,8 +260,8 @@ namespace Otomasyon_Psikolog_FİNAL
                             Seans_Adi = g.Key.SessionType_Name,
                             Toplam_Satis = g.Count()
                         })
-                        .OrderByDescending(x => x.Toplam_Satis) // Toplam satış sayısına göre azalan şekilde sıralama yapıyoruz
-                        .FirstOrDefault(); // En çok satılan seans türünü alıyoruz
+                        .OrderByDescending(x => x.Toplam_Satis) // Toplam satış sayısına göre azalan şekilde sıralama yapıyoruz. En çok satılan seans türünü alıyoruz
+                        .FirstOrDefault(); 
                     if (result != null)
                     {
                         lbl_2.Text = ($" {result.Seans_Adi} - Toplam Satış: {result.Toplam_Satis}");
